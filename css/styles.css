@@ -293,8 +293,8 @@ a {
 }
 
 .section-team-name {
-    padding: 30px;
-
+    padding-top: 30px;
+    padding-bottom: 30px;
     }
 
 .title-section-team {
@@ -322,12 +322,11 @@ a {
 /* !<!--! портфоліо --> */
 
 /* !кнопка 4 портфоліо   */
-.container-buttom {
-    padding-bottom: 34px;
-}
+
 .list-filter {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .button-item:not(:last-child) {
