@@ -333,7 +333,7 @@ a {
 .list-filter {
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 }
 
 .button-item:not(:last-child) {
