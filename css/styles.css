@@ -144,6 +144,13 @@ a {
     padding-bottom: 94px;
 }
 
+.section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: var(--background-color-hero);
+    text-align: center;
+}
+
 .section-hero-titel {
     margin-top: 0;
     margin-bottom: 58px;
@@ -161,27 +168,17 @@ a {
     text-transform: uppercase;
 }
 
-.section-hero {
-    padding-top: 200px;
-    padding-bottom: 172px;
-
-    background-color: var(--background-color-hero);
-}
-
 .button-hero {
     border-radius: 4px;
     padding: 10px 32px;
-    min-width: 216px;
-    min-height: 50px;
     margin: 0 auto;
+
 
     background-color: var(--color-accent);
     color: var(--color-accent-two);
+    border: none;
     font-weight: 700;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
 }
 
@@ -189,12 +186,13 @@ a {
 .button-hero:focus {
     color: var(--color-accent-two);
     background-color: var(--button-active);
+    outline: none;
 }
 
 /* !<!-- друга секція --> */
 .section-features {
     padding-top: 94px;
-    padding-bottom: 0;
+    padding-bottom: 94px;
 }
 
 .list-section-features {
@@ -225,6 +223,7 @@ a {
 }
 
 .title-section-features {
+    margin-top: 0;
     margin-bottom: 10px;
 
     color: var(--color-titel-nav);
@@ -244,7 +243,11 @@ a {
 }
 
 /* ! третя секція  */
+.section-our-work{
+    padding-top: 0;
+    padding-bottom: 94px;
 
+}
 .section-titel {
     margin-top: 0;
     margin-bottom: 50px;
@@ -259,6 +262,10 @@ a {
 
 .our-work-card-list {
     display: flex;
+    
+}
+
+.item-our-work-card {
     width: 370px;
 }
 
@@ -304,7 +311,7 @@ a {
     color: var(--color-titel-nav);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -314,7 +321,7 @@ a {
     margin-bottom: 0px;
 
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -349,6 +356,7 @@ a {
 .button-filter:focus {
     color: var(--color-accent-two);
     background-color: var(--color-accent);
+    outline: none;
 }
 
 /* !катки  портфоліо   */
@@ -371,17 +379,11 @@ a {
     margin-bottom: 0;
 }
 
-.link-portfolio {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
 .works-examples {
     padding-top: 20px;
     padding-left: 24px;
     padding-bottom: 20px;
-    flex-grow: 1;
+    padding-right: 24px;
     border-bottom: 1px solid var(--color-accent-three);
     border-left: 1px solid var(--color-accent-three);
     border-right: 1px solid var(--color-accent-three);
