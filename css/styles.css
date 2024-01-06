@@ -1,0 +1,151 @@
+/* Base styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+  background-color: #fff;
+}
+
+/* Reset styles */
+/* ul,
+ol {
+  list-style-type: none;
+} */
+
+/* a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+} */
+
+/* Common styles */
+
+.team-titel,
+.portfolio-titel {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.advantages-titel-caption,
+.team-titel-caption,
+.portfolio-titel-caption {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.advantages-desc,
+.team-desc,
+.portfolio-desc {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* !header */
+
+.main-logo {
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.header-logo-accent {
+  color: #2e2f42;
+}
+
+.header-nav-link {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+address {
+  font-style: normal;
+}
+
+.header-address-link {
+  color: #434455;
+  font-size: 16px;
+  /* font-weight: 400; */
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-nav-link:focus,
+.header-nav-link:hover {
+  color: #404bbf;
+}
+
+.header-address-link:focus,
+.header-address-link:hover {
+  color: #404bbf;
+}
+
+/* !hero */
+
+.hero {
+  background-color: #2e2f42;
+}
+
+.hero-titel {
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+}
+
+.hero-button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  background-color: #4d5ae5;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* !team */
+
+.team {
+  background-color: #f4f4fd;
+}
+.team-item {
+  background-color: #fff;
+}
+/* !footer */
+
+.footer {
+  background-color: #2e2f42;
+}
+
+.footer-logo-accent {
+  color: #f4f4fd;
+}
+
+.footer-desc {
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
