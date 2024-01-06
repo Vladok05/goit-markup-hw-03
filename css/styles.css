@@ -6,23 +6,70 @@ body {
 }
 
 /* Reset styles */
-/* ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
 ol {
   list-style-type: none;
-} */
+  margin: 0;
+  padding: 0;
+}
 
-/* a {
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
   text-decoration: none;
 }
 
 button {
+  /* display: block; */
+  padding: 0;
+  border: none;
   cursor: pointer;
-} */
+}
 
 /* Common styles */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .team-titel,
 .portfolio-titel {
+  margin-bottom: 72px;
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -50,8 +97,36 @@ button {
 }
 
 /* !header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-address-list {
+  display: flex;
+  font-style: normal;
+  gap: 40px;
+}
+
+.header-address {
+  margin-left: auto;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 40px;
+}
 
 .main-logo {
+  display: inline-flex;
+  align-items: center;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -59,6 +134,7 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 46px;
 }
 
 .header-logo-accent {
@@ -66,21 +142,23 @@ button {
 }
 
 .header-nav-link {
+  display: block;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
-address {
+/* address {
   font-style: normal;
-}
+} */
 
 .header-address-link {
   color: #434455;
   font-size: 16px;
-  /* font-weight: 400; */
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -99,24 +177,29 @@ address {
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0 292px 0;
+  margin: auto;
 }
 
 .hero-titel {
   color: #fff;
+  width: 496px;
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  margin: auto auto 48px auto;
 }
 
 .hero-button {
+  display: block;
+  padding: 16px 32px 16px 32px;
+  margin: 0 auto 0 auto;
   color: #fff;
-  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
   background-color: #4d5ae5;
 }
 
@@ -124,19 +207,87 @@ address {
 .hero-button:focus {
   background-color: #404bbf;
 }
+/* !advantages */
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-desc {
+  width: 264px;
+}
+
+.advantages-titel-caption {
+  margin-bottom: 8px;
+}
 
 /* !team */
 
 .team {
   background-color: #f4f4fd;
 }
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .team-item {
   background-color: #fff;
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
+/* .team-titel {
+  margin-bottom: 72px;
+} */
+
+.team-titel-caption {
+  margin: 32px auto 8px auto;
+  text-align: center;
+}
+
+.team-desc {
+  margin: 0 auto 32px auto;
+  text-align: center;
+}
+
+/* !our portfolio */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+
+.portfolio-titel-caption {
+  margin: 32px auto 8px auto;
+}
+
+.portfolio-desc {
+  margin: 0 auto 32px auto;
+}
+
 /* !footer */
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0 100px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-logo-accent {
@@ -144,6 +295,8 @@ address {
 }
 
 .footer-desc {
+  width: 264px;
+  margin-top: 17px;
   color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
